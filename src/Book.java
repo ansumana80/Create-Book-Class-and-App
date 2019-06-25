@@ -5,6 +5,7 @@ public class Book
     private boolean isInStock;
 
     // constructor runs when the keyword 'new' is encountered
+    // no argument constructor
     public Book()
     {
         System.out.println("The constructor has run");
@@ -19,7 +20,7 @@ public class Book
         this.isInStock=isInStock;
     }
         //method
-        public void setTitle(String Title)
+        public void setTitle(String title)
         {
             this.title=title;
         }
@@ -29,7 +30,7 @@ public class Book
             return title;
         }
 
-        public void setAuthor(String Author)
+        public void setAuthor(String author)
         {
             this.author=author;
         }
@@ -39,7 +40,7 @@ public class Book
             return author;
         }
 
-        public void setDescription(String Description)
+        public void setDescription(String description)
         {
             this.description=description;
         }
@@ -66,7 +67,7 @@ public class Book
 
         public void getDisplayText()
         {
-            System.out.println("Author:" + this.author + "Title: " + this.title + "Description: " + this.description);
+            System.out.println("Author: " + this.author + " "+ "Title : " + this.title + " Description : " + this.description);
         }
 
 }
