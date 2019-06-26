@@ -11,7 +11,7 @@ public class Book
         System.out.println("The constructor has run");
     }
     //overloaded constructor allows us to pass parameters
-    public Book(String t, String author, String description, double price, boolean isInStock)
+    public Book(String title, String author, String description, double price, boolean isInStock)
     {
         this.title=title;
         this.author=author;
@@ -60,14 +60,15 @@ public class Book
             return isInStock;
         }
 
-        public void getisInStock (boolean isInStock)
+        public void setisInStock (boolean isInStock)
         {
             this.isInStock=isInStock;
         }
 
         public void getDisplayText()
         {
-            System.out.println("Author: " + this.author + " "+ "Title : " + this.title + " Description : " + this.description);
+            System.out.println("Author: " + this.author + " " + "Title : " + this.title + " " + " Description : "
+                    + this.description + " " + "Price : " + this.price + " " + "IsinStock: " + this.isInStock);
         }
 
 }
